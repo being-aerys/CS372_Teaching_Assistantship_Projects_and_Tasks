@@ -1,0 +1,12 @@
+For Server Compilation : gcc -std=gnu99 -o ftserver ftserver.c
+
+Steps to follow:
+Server side:
+Run the server program on one of the flip servers before the client can access as "./ftserver [port number where the server will listen]"
+
+Client side:
+To get a list of what files are present:
+python ftclient.py [flip_server_ip_address] [flip_server_port_number_where_it_is_listening] -l [data_port_to_specify_from_which_port_to_get_data] #returns a list of the files
+
+To retrieve a specific file:
+python ftclient.py [flip_server_ip_address] [flip_server_port_number_where_it_is_listening] -g [name_of_the_file_to_retrieve] [data_port_to_specify_from_which_port_to_get_data]
